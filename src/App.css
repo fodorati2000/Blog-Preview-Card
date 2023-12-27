@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
+  background-color: #f3d34c;
+ 
+  height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+
+
 }
 
-.App-link {
-  color: #61dafb;
+.cardInactive{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  width: 340px;
+  height: 500px;
+  background-color: #fff;
+  border: 1px solid black;
+  box-shadow:10px 10px 0px black;
+  border-radius: 25px;
+
+}
+.cardActive{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  width: 340px;
+  height: 500px;
+  background-color: #fff;
+  border: 1px solid black;
+  box-shadow:10px 10px 0px 5px black;
+  cursor:pointer; 
+  border-radius: 25px;
+
+}
+.cardActive .title{
+  color:#f3d34c;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cardInactive:hover .title{
+  color:#f3d34c;
+}
+.cardInactive:hover {
+  cursor:pointer; 
+  box-shadow:10px 10px 0px 5px black;
+}
+.header{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.body{
+  color:#000;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+
+}
+.wallpaper{
+ border-radius: 15px;
+
+}
+
+.type{  
+  font-weight: 700;
+  font-size: 14px;
+  margin-top:20px;
+  padding:5px 10px 5px 10px;
+  color:black;
+  border-radius: 5px;
+  background-color: #f4d14a;
+}
+
+.date{
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.title{
+  font-weight: 700;
+  font-size: 26px;
+  margin-top: 20px;
+}
+.description{
+  color:#a4a4a4;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.author{
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.avatar{
+
+  width: 35px;
+  margin-right: 20px;
 }
